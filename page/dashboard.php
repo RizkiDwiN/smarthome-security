@@ -58,7 +58,10 @@
                     </div>
                     <div><?php
                          
-                           echo "<strong>Waspada!</strong>Terdapat gerakan mencurigakan";
+                           echo '<audio autoplay loop controls style="display: none;">
+                                  <source src="assets/audio/waspada.mp3" type="audio/mpeg">
+                                 </audio>
+                                 <strong>Waspada!</strong>Terdapat gerakan mencurigakan';
                          }else{
                            echo "Tidak ada pergerakan terdeteksi";
                          }
@@ -82,7 +85,9 @@
                       ?></div>
                     <div><?php
                          
-                           echo "<strong>Peringatan!</strong>Terdeteksi api di dalam rumah";
+                           echo '<audio autoplay loop controls style="display: none;">
+                                  <source src="assets/audio/peringatan.mp3" type="audio/mpeg">
+                                 </audio><strong>Peringatan!</strong>Terdeteksi api di dalam rumah';
                          }else{
                            echo "Api tidak terdeteksi";
                          }
@@ -103,21 +108,6 @@
               <div>
                 <h4 class="card-title mb-0">Pemantauan</h4>
                 <div class="small text-medium-emphasis">Per Hari</div>
-              </div>
-              <div class="btn-toolbar d-none d-md-block" role="toolbar" aria-label="Toolbar with buttons">
-                <div class="btn-group btn-group-toggle mx-3" data-coreui-toggle="buttons">
-                  <input class="btn-check" id="option1" type="radio" name="options" autocomplete="off">
-                  <label class="btn btn-outline-secondary"> Day</label>
-                  <input class="btn-check" id="option2" type="radio" name="options" autocomplete="off" checked="">
-                  <label class="btn btn-outline-secondary active"> Month</label>
-                  <input class="btn-check" id="option3" type="radio" name="options" autocomplete="off">
-                  <label class="btn btn-outline-secondary"> Year</label>
-                </div>
-                <button class="btn btn-primary" type="button">
-                  <svg class="icon">
-                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-cloud-download"></use>
-                  </svg>
-                </button>
               </div>
             </div>
             <div class="c-chart-wrapper" style="height:300px;margin-top:40px;">

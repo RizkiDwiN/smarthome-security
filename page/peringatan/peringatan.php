@@ -53,7 +53,10 @@
                           <td><?php echo $data['sensor2']; ?></td>
                           <td><?php
                                 if ($data['value3'] == 1) {
-                                  echo "🦹 Terdeteksi pergerakan";
+                                  echo '🦹 Terdeteksi pergerakan
+                                        <audio autoplay loop controls style="display: none;">
+                                  <source src="assets/audio/alarm.mp3" type="audio/mpeg">
+                                 </audio>';
                                 }else{
                                   echo "Tidak ada pergerakan";
                                 }
@@ -61,7 +64,10 @@
                           <td><?php echo $data['sensor3']; ?></td>
                           <td><?php
                                 if ($data['value4'] == 1) {
-                                  echo "🔥 Terdeteksi";
+                                  echo '🔥 Terdeteksi
+                                  <audio autoplay loop controls style="display: none;">
+                                  <source src="assets/audio/alarm.mp3" type="audio/mpeg">
+                                 </audio>';
                                 }else{
                                   echo "🔥 Tidak Terdeteksi";
                                 }
